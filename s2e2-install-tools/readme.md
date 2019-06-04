@@ -1,7 +1,8 @@
-install tools
+Install tools
 =============
 
-#install and configure kubectl
+
+###install and configure kubectl
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows
 
@@ -29,7 +30,7 @@ The namespace in rancher that we should use is test-research. Of course you can 
 --------------------
 
 
-#install and configure helm 
+###install and configure helm 
 
 
 follow the instructions from [https://github.com/helm/helm/blob/master/docs/install.md](https://github.com/helm/helm/blob/master/docs/install.md)
