@@ -27,9 +27,9 @@ if you have a container that was started and was never removed you can start it 
 
 **docker rm $(sudo docker ps -a | grep hello )**
 
-**docker container run --rm -it -p 80:8088 nginx**
+**docker container run --rm -it -p 8088:80 nginx**
 
 **it** - run in the foreground and show all the logs container is making to the console
 
-**-p** map the ports -p <container_port:host_port>
-so **-p 80:8088** means map the host machine port 8088 to container port 80.
+**-p** map the ports -p <host_port:container_port>
+so **-p 8088:80** means map the host machine port 8088 to container port 80.
