@@ -27,3 +27,7 @@ docker exec -it <container_name> /bin/sh
 
 default website is at /usr/share/nginx/html
 change its contents to something fancy by opening the html file and editing it
+
+###5. executing command without being in the container
+
+docker exec -t <container_name> /bin/sh -c "any command here"
