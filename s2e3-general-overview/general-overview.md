@@ -1,7 +1,13 @@
 general pipeline overview
 =========================
 
-main components:
+![ci-cd comparison](kubernetes-cicd-comparison.png)
+
+the general pipeline looks like this:
+
+![pipeline overview](ci-cd-workflow.png)
+
+###main kubernetes components:
 
 kube api server
 
@@ -32,6 +38,14 @@ kube scheduler
 - affinity/anti-affinity - how containers are located, together or separated.
 
 
+![components integration1](kubernetes-architecture.png)
+
+same in greater details and with a rubber duck
+![components integration2](kubernetes-architecture-2.jpg)
+
+with legends for protocols interaction
+![components integration3](k8s-components-interaction.png)
+
 kubectl goes to kube-API-Server when you communicate to it to ask to deploy anything or check the state of the objects.
 
 ###YAML file structure, how are objects described?
@@ -44,3 +58,6 @@ apiVersion can be of 3 types:
 - beta - safe but can be changed( v1beta )
 - stable - included in the release( v1 )
 
+![kubernetes-api-deep-dive-1](kubernetes-api-deep-dive-1.jpg)
+
+![kubernetes-api-deep-dive-2](kubernetes-api-deep-dive-2.jpg)
